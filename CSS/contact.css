@@ -1,0 +1,469 @@
+/*----------------------------------header,nav------------------------->
+
+/*................LOGO......................*/
+.navbar-brand img {
+	width: auto;
+	height: 50px;
+	margin-left: 6em;
+    opacity: 1;
+    filter: alpha(opacity=50); 
+}
+
+/*.....................navigation..................*/
+.navbar-nav{
+	margin-left: 21em;
+	
+}
+
+ a#active{
+	font-weight: bold;
+}
+
+/*...........................Search bar..................*/
+.form-inline {
+	margin-left: 14em;
+}
+
+.form-inline .form-control  {
+	width: 30em;
+}
+
+/*..........................Header......................*/
+header{
+	position: fixed;
+	width: 100% !important;
+	top: 0;
+	z-index: 100001;
+	background-color: black;
+	box-shadow: rgba(0, 0, 0, .117647) 0 1px 3px;
+	border-bottom: 1.7px solid black;
+	-webkit-animation: mymove 5s infinite;
+	animation: mymove 5s infinite;
+	height: 80px;	
+}
+
+/*------------------------------login--------------------*/
+/* Full-width input fields */
+#LogUs, #Logpsw{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#buttonLog {
+  background-color: #F3A32A;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#buttonLog:hover{
+	background-color: black;
+	text-decoration: none;
+}
+
+#buttonLog a{
+	text-decoration: none;
+}
+
+/* Extra styles for the cancel button */
+.cancelLog {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #17a2b8;
+  float: left;
+  margin-left: 20px;}
+
+/* Center the image and position the close button */
+.imgcontainerLog {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.profileLog {
+  width: 18%;
+ height: 200px;
+  border-radius: 50%;
+  
+}
+
+.container{
+  padding: 16px;
+  width: 500px;
+   
+}
+
+span.psw {
+  float: right;
+  margin-right:20px;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100001; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  margin-top: 20px;
+}
+
+/* Modal Content/Box */
+.modal-con {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+#LogCol {
+    background: #fff;
+}
+
+/* The Close Button (x) */
+.close1 {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  transform: rotateZ(90deg);
+  transition: transform 0.1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+	 
+	 }
+  .cancelLog {
+     width: 100%;
+	 float: left;
+	 
+  }
+}
+
+#buttonLog a{
+	color: white;
+}
+
+nav {
+	
+	height: 3em;
+	background-color: #E7BA4D;
+	margin-top: 80px;
+}
+
+
+navbar{
+	height: 20em;
+	
+}
+
+
+
+.btn {
+	background-color: #E7BA4D;
+	margin-left: 10px;
+}
+
+a.nav-link {
+	color: black;
+	margin-left: 60px;
+	font-weight: normal;
+}
+
+.dropdown-menu{
+	margin-left: 20px;
+}
+a.nav-l{
+	color: white;
+	margin: 25px;
+	
+}
+
+.nav-l img{
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+}
+
+a.nav-link:hover{
+	font-weight: bold;
+}
+
+.bannersection{
+	
+    
+	margin-top: 129px;
+}
+
+
+/*-------------------------Cookies-------------------*/
+.alert {
+	height: 100px;
+	z-index: 10001;
+	border: 0.5px solid black;
+	color: black;
+	margin-bottom: 0px;
+	background-color: lightgray;
+}
+
+.close{
+	margin-left: 12px;
+	
+}
+
+.boxe {
+	border: 2px solid black;
+	padding: 8px;
+	border-radius: 10px ;
+	font-size: 15px;
+	
+}
+
+
+
+
+/*--------------------main-----------------*/
+
+
+
+input.form-control1-btn {
+	background: #F3A32A;
+	color: #fff;
+	border-radius: 20px 10px ;
+	padding: 11px 30px;
+	font-size: 23px;
+	cursor: pointer;
+	margin-left: 2.5em;
+	border: none;
+}
+
+input.form-control1-btn:hover {
+	opacity: 0.9;
+}
+
+.form-group label {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 20px;
+	cursor: pointer;
+	display: block;
+	color: #898989;
+	font-family: Lato, sans-serif;
+	margin-bottom: 5px;
+	font-weight: bold;
+	margin-left: 3.7em;
+}
+
+.form-control1 {
+	background-color: #fff;
+	border: 2px solid #e7e7e7;
+	display: inline-block;
+	padding: 6px 6px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #b0b0b0;
+	vertical-align: middle;
+	border-radius: 5px;
+	margin-left: 3.7em;
+	width: 90%;
+}
+
+
+
+#space {
+	
+	padding-top: 40px;
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.main-container{
+	background-color: black;
+	padding: 20px;
+	margin-bottom:2em;
+	border: 2px solid black;
+	border-radius: 20px;
+	width: 60%;
+    margin-left: 20%;
+}
+
+.feedback{
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../Images/back.jpg); 
+	background:cover;
+	padding-top:4em;
+	padding-bottom:3em;
+	
+}
+
+#feedback{
+	height: 120px;
+}
+
+/* cards*/
+
+.row {
+margin-left:15em;}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin-bottom:5em;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+  
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #000;
+  color: white;
+  transform: rotateX(180deg);
+  padding-top:5em;
+}
+
+#team h1{
+	text-align:center;
+	color:light-yellow;
+	text-decoration:bold;
+	font-size:60px;
+	text-shadow: 2px 2px 2px #F3A32A;
+	margin-bottom: 40px;}
+
+
+
+/*footer*/
+footer.footer {
+	background: #000;
+	padding: 30px 10% 0px;
+	
+}
+
+.first.footercol {
+	width: 33.14%;
+	display: inline-block;
+	float: left;
+}
+
+.social img {
+	width: 48px;
+	padding-right: 10px;
+}
+
+.social a{
+	text-decoration: none;
+}
+.mainfoot {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.first.footercol h3 {
+	font-size: 32px;
+	color: #fff;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+ul.footlink {
+	padding-left: 10px;
+	list-style: none;
+}
+
+ul.footlink li,
+.first.footercol p {
+	padding: 0px;
+	font-size: 19px;
+	margin-bottom: 8px;
+	color: #fff;
+}
+
+ul.footlink li a {
+	color: #fff;
+}
+
+.copyfoot {
+	text-align: center;
+	padding: 15px;
+	border-top: 1px solid #fff;
+	margin-top: 10px;
+}
+
+.copyfoot p {
+	color: #fff;
+}

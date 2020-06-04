@@ -1,0 +1,413 @@
+/*................LOGO......................*/
+.navbar-brand img {
+	width: auto;
+	height: 50px;
+	margin-left: 6em;
+    opacity: 1;
+    filter: alpha(opacity=50); 
+}
+
+/*.....................navigation..................*/
+.navbar-nav{
+	margin-left: 21em;
+}
+
+ a#active{
+	font-weight: bold;
+}
+
+/*...........................Search bar..................*/
+.form-inline {
+	margin-left: 14em;
+}
+
+.form-inline .form-control1  {
+	width: 30em;
+}
+
+.form-control1{
+	background-color: #fff;
+	line-height: 1.5;
+	padding: .375rem .75rem;
+	border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/*..........................Header......................*/
+header{
+	position: fixed;
+	width: 100% !important;
+	top: 0;
+	z-index: 100001;
+	background-color: black;
+	box-shadow: rgba(0, 0, 0, .117647) 0 1px 3px;
+	border-bottom: 1.7px solid black;
+	-webkit-animation: mymove 5s infinite;
+	animation: mymove 5s infinite;
+	height: 80px;
+	
+}
+
+/*------------------------------login--------------------*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#buttonLog {
+  background-color: #F3A32A;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#buttonLog:hover{
+	background-color: black;
+	text-decoration: none;
+}
+
+#buttonLog a{
+	text-decoration: none;
+}
+
+/* Extra styles for the cancel button */
+.cancelLog {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #17a2b8;
+  float: left;
+  margin-left: 20px;}
+
+/* Center the image and position the close button */
+.imgcontainerLog {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.profileLog {
+  width: 18%;
+ height: 200px;
+  border-radius: 50%;
+  
+}
+
+.container{
+  padding: 16px;
+  width: 500px;
+   
+}
+
+span.psw {
+  float: right;
+  margin-right:20px;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100001; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  margin-top: 20px;
+}
+
+/* Modal Content/Box */
+.modal-con {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+#LogCol {
+    background: #fff;
+}
+
+/* The Close Button (x) */
+.close1 {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  transform: rotateZ(90deg);
+  transition: transform 0.1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+	 
+	 }
+  .cancelLog {
+     width: 100%;
+	 float: left;
+	 
+  }
+}
+
+#buttonLog a{
+	color: white;
+}
+
+
+nav {
+	
+	height: 3em;
+	background-color: #E7BA4D;
+	margin-top: 80px;
+}
+
+
+navbar{
+	height: 20em;
+	border-bottom: 1.7px solid white;
+}
+
+@-webkit-keyframes mymove {
+	50% {
+		border-bottom-color: #E7BA4D;
+	}
+}
+
+@keyframes mymove {
+	50% {
+		border-bottom-color: #E7BA4D;
+	}
+}
+
+h1.text-center {
+    color: #E7BA4D;
+} 
+.btn {
+	background-color: #E7BA4D;
+	margin-left: 10px;
+}
+
+a.nav-link {
+	color: black;
+	margin-left: 60px;
+	font-weight: normal;
+}
+
+.dropdown-menu{
+	margin-left: 20px;
+}
+a.nav-l{
+	color: white;
+	margin: 25px;
+	
+}
+
+.nav-l img{
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+}
+
+a.nav-link:hover{
+	font-weight: bold;
+}
+
+
+
+.alert {
+	height: 100px;
+	z-index: 10001;
+	border: 0.5px solid black;
+	color: black;
+	margin-bottom: 0px;
+	background-color: lightgray;
+}
+
+.close{
+	margin-left: 12px;
+	
+}
+
+.boxe {
+	border: 2px solid black;
+	padding: 8px;
+	border-radius: 10px ;
+	font-size: 15px;
+	
+}
+
+
+/*-------------------------------------Registeration form-------------*/
+
+
+body{
+	
+}
+
+.container1 {
+	background-size: cover;
+	background-image: url(../Images/komal2.jpg);
+	padding-bottom: 3em;
+	background-attachment: fixed;
+	font-family: new time roman;
+	margin-top: 120px;
+	padding-top: 30px;
+}
+
+.end {
+    text-align: center;
+color: white;}
+
+p#demo{
+	text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+    color: white;
+}
+
+
+
+h1{
+	font-size: 40px;
+	margin-top: 20px; 
+	margin-bottom: 20px;
+	color: white;
+}
+
+.form-control{
+	background: transparent;
+	border-radius: 0px;
+	margin-top: 17px;
+	font-size: 19px;
+	color: white;
+}
+
+.btn1-info{
+	background: #E7BA4D;
+	border-radius: 0px;
+	border: 0px;
+	margin-top: 70px;
+	margin-left: 135px;
+	width: 480px;
+	height: 40px;
+	font-size: 19px;
+	transition: 1s;
+	color: white;
+}
+
+.btn1-info:hover{
+	background: transparent;
+	border: 2px solid #E7BA4D;
+}
+
+.row{
+	color: white;
+}
+
+
+
+/*footer*/
+footer.footer {
+	background: #000;
+	padding: 30px 10% 0px;
+}
+
+.first.footercol {
+	width: 33.14%;
+	display: inline-block;
+	float: left;
+}
+
+.social img {
+	width: 48px;
+	padding-right: 10px;
+}
+
+.social a{
+	text-decoration: none;
+}
+.mainfoot {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.first.footercol h3 {
+	font-size: 32px;
+	color: #fff;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+ul.footlink {
+	padding-left: 10px;
+	list-style: none;
+}
+
+ul.footlink li,
+.first.footercol p {
+	padding: 0px;
+	font-size: 19px;
+	margin-bottom: 8px;
+	color: #fff;
+}
+
+ul.footlink li a {
+	color: #fff;
+}
+
+.copyfoot {
+	text-align: center;
+	padding: 15px;
+	border-top: 1px solid #fff;
+	margin-top: 10px;
+}
+
+.copyfoot p {
+	color: #fff;
+}

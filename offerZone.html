@@ -1,0 +1,264 @@
+<html>
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Welcome - Aperture Labs</title>
+      <meta name="description" content="Digital creative contents including photography">
+      <meta name="keywords" content="photography, video production, coaching ">
+      <meta name="author" content="Group 2">
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  
+      
+     
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	  
+	  
+	  <link rel="stylesheet" href="CSS/offerZone.css">
+	  <style>
+	  input#datepicker {
+    color: gray;
+}</style>
+	  <script src="JS/jquery.validate.min.js"></script>
+	  <script src="JS/register.js">
+	
+	</script>
+	  
+	
+</head>
+<body>
+
+<header class="navbar navbar-expand-lg navbar-light fixed-top">
+	<a class="navbar-brand" href="#"><img src="images/logomain.png"></a>
+  
+	<form class="form-inline my-2 my-lg-0">
+      <input class="form-control1 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn my-2 my-sm-0" type="submit">Search</button>
+    </form>
+	 
+	 <button onclick="document.getElementById('id01').style.display='block'" class="btn" style="width:auto;">Login</button>
+	 <a class="nav-l" href="products.html#cart"><img id="" src="images/cart.png" width="35" height="35"></a>
+	
+
+
+
+<!-------------------------------------Login MOdal---------------------->
+
+
+	
+
+</header>
+
+
+<div id="id01" class="modal1">
+  
+  <form class="modal-content animate" id="LogCol" action="/action_page.php" method="post">
+    <div class="imgcontainerLog">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
+      <img src="Images/profile.png" alt="Profile" class="profileLog">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" id="buttonLog" ><a href="index.html">Login</a></button><br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+	
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelLog">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+<nav class="navbar navbar-expand-lg fixed-top">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link"  href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About Us</a>
+      </li>
+      
+	  <li class="nav-item">
+        <a class="nav-link" href="products.html">Products</a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a class="nav-link" id="active" href="offerZone.html">Register</a>
+      </li>
+	  
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="explore.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="tutorial.html">Tutorials</a>
+          <a class="dropdown-item" href="tutorial.html#buy">Buy N Sell</a>
+         
+        </div>
+      </li>
+	   
+	  <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </li>
+	  
+	 
+    </ul>
+	</div>
+</nav>
+
+
+<main>
+	<div class="container1">
+	<h1 class="text-center"> Sign up now and get 25% off on next three purchases.</h1>
+	<h2 class="end">Offer Ends:</h2>
+	<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 18, 2019 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+	<form id="lab4">
+		<div class="row">
+		
+			<div class="col-md-3"></div>
+			<div class="col-md-6" style="background: rgba(255,255,255,0.1); margin-top: 60px; height: 750px;">
+				<h1 class="text-center"> Sign-up for free</h1>
+			
+				<div class="row">
+					<div class="col-md-6">
+					  
+						<input type="text" class="form-control" name="firstname"  id="firstname" placeholder="First Name">
+					</div>
+					<div class="col-md-6">
+						<input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name">
+					</div>
+				</div>
+				<input type="text" class="form-control" id="username" name="username" placeholder="Username">
+				<input type="password" class="form-control" id="password" name="password" placeholder="password">
+				<input type="password" class="form-control" name="confirm_password" placeholder="confirm_password">
+				<input type="email" class="form-control" name="email" placeholder="email">
+				<input type="date" class="form-control" id="datepicker"name="date" placeholder="date">
+				 <button type="submit"  class="btn1 btn1-info"> Sign up</button>
+				<!--<div class="spinner-border" role="status">
+				<span class="sr-only">Loading...</span>
+				<a href="#"><div class="btn btn-info">Sign up now!</div></a>-->
+					<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+			</div>
+			</form>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+	</div>
+	
+</main>
+
+<footer class="footer">
+			<div class="mainfoot">
+				<div class="first footercol">
+					<h3>About</h3>
+					<p>Aperture Labs </p>
+					<p>Toronto</p>
+					<p>aperturelab@gmail.com</p>
+					
+				</div>
+				<div class="first footercol">
+					<h3>Quick Links</h3>
+					<ul class="footlink">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us </a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="offerZone.html">Register</a></li>
+                  <li><a href="tutorial.html">Services</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+               </ul>
+				</div>
+				<div class="first footercol">
+					<h3>Follow Us</h3>
+					<div class="social">
+						<a href="https://www.facebook.com/Portal-2-Aperture-1459245614397656/">
+						<img src="images/fb.png" alt="Facebook">
+						</a>
+						<a href="https://www.instagram.com/aperturescienceportal/">
+						<img src="images/insta.png" alt="Instagram">
+						</a>
+						<a href="https://half-life.fandom.com/wiki/Aperture_Science">
+						<img src="images/go.png" alt="Google+">
+						</a>
+						<a href="https://www.youtube.com/watch?v=xR4TWp1VkHM">
+						<img src="images/yt.png" alt="YouTube">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="copyfoot">
+				<p>© Copyright 2019 | Aperture Labs | All Rights Reserved | Design & Developed by Team Apertures</p>
+			</div>
+	</footer>
+</body>
+</html>

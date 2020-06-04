@@ -1,0 +1,667 @@
+body{
+	background-color: lightgray;
+}
+
+/*-----------------------------------------------------------------*/
+#calendar{
+
+background:url("../Images/calendar.jpg");
+ height: 70vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+	
+
+}
+
+iframe{
+margin:30px;
+margin-left:22em;}
+/*----------------------------------------------------------------------*/
+.unique4{
+	margin: 20px;
+	background: white;
+	padding: 10px;
+	padding-right: 20px;
+}
+
+.faq {
+    margin-top: 10px;
+}
+
+.set{ 
+	 margin-top: 9em;
+	 margin-left: 7em;
+}
+/*................LOGO......................*/
+.navbar-brand img {
+	width: auto;
+	height: 50px;
+	margin-left: 6em;
+    opacity: 1;
+    filter: alpha(opacity=50); 
+}
+
+/*.....................navigation..................*/
+.navbar-nav{
+	margin-left: 21em;
+}
+
+ a#active{
+	font-weight: bold;
+}
+
+/*...........................Search bar..................*/
+.form-inline {
+	margin-left: 14em;
+}
+
+.form-inline .form-control  {
+	width: 30em;
+}
+
+/*..........................Header......................*/
+header{
+	position: fixed;
+	width: 100% !important;
+	top: 0;
+	z-index: 100001;
+	background-color: black;
+	box-shadow: rgba(0, 0, 0, .117647) 0 1px 3px;
+	border-bottom: 1.7px solid black;
+	-webkit-animation: mymove 5s infinite;
+	animation: mymove 5s infinite;
+	height: 80px;
+	
+}
+
+/*------------------------------login--------------------*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#buttonLog {
+  background-color: #F3A32A;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#buttonLog:hover{
+	background-color: black;
+	text-decoration: none;
+}
+
+#buttonLog a{
+	text-decoration: none;
+}
+
+/* Extra styles for the cancel button */
+.cancelLog {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #17a2b8;
+  float: left;
+  margin-left: 20px;}
+
+/* Center the image and position the close button */
+.imgcontainerLog {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.profileLog {
+  width: 18%;
+ height: 200px;
+  border-radius: 50%;
+  
+}
+
+.container{
+  padding: 16px;
+  width: 500px;
+   
+}
+
+span.psw {
+  float: right;
+  margin-right:20px;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100001; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  margin-top: 20px;
+}
+
+/* Modal Content/Box */
+.modal-con {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+#LogCol {
+    background: #fff;
+}
+
+/* The Close Button (x) */
+.close1 {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  transform: rotateZ(90deg);
+  transition: transform 0.1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+	 
+	 }
+  .cancelLog {
+     width: 100%;
+	 float: left;
+	 
+  }
+}
+
+#buttonLog a{
+	color: white;
+}
+
+nav {
+	
+	height: 3em;
+	background-color: #E7BA4D;
+	margin-top: 80px;
+}
+
+
+navbar{
+	height: 20em;
+	border-bottom: 1.7px solid white;
+}
+
+@-webkit-keyframes mymove {
+	50% {
+		border-bottom-color: #E7BA4D;
+	}
+}
+
+@keyframes mymove {
+	50% {
+		border-bottom-color: #E7BA4D;
+	}
+}
+
+.btn {
+	background-color: #E7BA4D;
+	margin-left: 10px;
+}
+
+a.nav-link {
+	color: black;
+	margin-left: 60px;
+	font-weight: normal;
+}
+
+.dropdown-menu{
+	margin-left: 20px;
+}
+a.nav-l{
+	color: white;
+	margin: 25px;
+	
+}
+
+.nav-l img{
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+}
+
+a.nav-link:hover{
+	font-weight: bold;
+}
+
+
+/*-------------------------------------------------------------*/
+.bannersection {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../Images/about.jpg);
+    height: 85vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+	margin-top: 120px;
+	
+    
+}
+#check{
+	position: absolute;
+	height: 300px;
+	margin: 16% 0%;
+	text-align: center;
+	width: 100%;
+	color: #000;
+	font-size: 60px;
+}
+.welcome-text {
+	position: absolute;
+	height: 300px;
+	margin: 16% 0%;
+	text-align: center;
+	width: 100%;
+}
+
+.welcome-text>h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 60px;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 2px #E7BA4D;
+}
+
+.welcome-text #pp{
+	
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+	
+}
+
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+  color: black;
+}
+
+#flip{
+	font-size: 40px;
+	color: #F3A32A;
+	background-color: black;
+	cursor: pointer;
+}
+
+#flip:hover{
+	text-transform: uppercase;
+}
+.welcome-text #pp2{
+	font-size: 15px;
+	color: #fff;
+}
+
+
+
+.welcome-text a:hover {
+	background: white;
+	color: black;
+}
+
+
+.unique1{
+	margin: 20px;
+}
+.unique2{
+	margin: 40px;
+}
+/*.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(Images/lab.jpg);
+    border-radius: .3rem;
+    padding: 50px;
+	color: white;
+	height:70vh;
+}
+
+.jumbotron h1{
+	text-align: center;
+font-weight: bold;
+margin-top:2em;
+}*/
+
+/*jumbotron button*/
+.button {
+  border-radius: 50px;
+  background-color: #fda435;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  padding: 6px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button.button {
+    
+    text-align: center;
+    margin-left: 22.5em;
+	margin-top: 20px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\21D3';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.lead{
+	text-align: center;
+font-weight: bold;
+margin-top:2em;}
+
+.write {
+text-align:center;
+}
+
+.write h1{
+margin-top: 2em;
+color:#e8c354;
+text-decoration:underline;
+
+}
+
+.column {
+  
+  width: 50%;
+  padding: 0 10px;
+}
+
+/ Remove extra left and right margins, due to padding /
+
+
+/ Clear floats after the columns /
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+.alert {
+	height: 100px;
+	z-index: 10001;
+	border: 0.5px solid black;
+	color: black;
+	margin-bottom: 0px;
+	background-color: lightgray;
+}
+
+.close{
+	margin-left: 12px;
+	
+}
+
+.boxe {
+	border: 2px solid black;
+	padding: 8px;
+	border-radius: 10px ;
+	font-size: 15px;
+	
+}
+
+/*cards*/
+.column {
+  float: left;
+  width: 35%;
+  padding: 0 10px;
+  margin-left: 9.5em;
+    margin-top: 2em;
+ 
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #000;
+  height:250px;
+  margin:2em;
+  color:#fff;
+  opacity: 0.9;
+}
+.card:hover{
+	-ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+transform: scale(1.1);
+transition: 0.8s;}
+
+
+
+/*faq*/
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.faq h1{
+background:#E7BA4D;
+padding: 15px;
+}
+
+
+
+.accordion {
+    background-color: #fff;
+    color: #fda435;
+    cursor: pointer;
+	border: 1px solid #303030;
+	margin:10px 0;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+transition: 0.4s;}
+
+.accordion:hover{
+background:black;
+border: none;}
+
+.accordion::after{
+font-size:20px;
+margin-top:2px;}
+
+.accordion:hover::after{
+	color: white;
+	font-size: 25px;
+	margin-top: 0px;
+}
+
+/*footer*/
+footer.footer {
+	background: #000;
+	padding: 30px 10% 0px;
+}
+
+.first.footercol {
+	width: 33.14%;
+	display: inline-block;
+	float: left;
+}
+
+.social img {
+	width: 48px;
+	padding-right: 10px;
+}
+
+.social a{
+	text-decoration: none;
+}
+.mainfoot {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.first.footercol h3 {
+	font-size: 32px;
+	color: #fff;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+ul.footlink {
+	padding-left: 10px;
+	list-style: none;
+}
+
+ul.footlink li,
+.first.footercol p {
+	padding: 0px;
+	font-size: 19px;
+	margin-bottom: 8px;
+	color: #fff;
+}
+
+ul.footlink li a {
+	color: #fff;
+}
+
+.copyfoot {
+	text-align: center;
+	padding: 15px;
+	border-top: 1px solid #fff;
+	margin-top: 10px;
+}
+
+.copyfoot p {
+	color: #fff;
+}

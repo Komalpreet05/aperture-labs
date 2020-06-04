@@ -1,0 +1,372 @@
+<html>
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Welcome - Aperture Labs</title>
+      <meta name="description" content="Digital creative contents including photography">
+      <meta name="keywords" content="photography, video production, coaching ">
+      <meta name="author" content="Group 2">
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      
+     
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	  
+	 
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 25, 2019 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+	  
+	  
+	  
+	  
+	  
+	  <link rel="stylesheet" href="CSS/home.css">
+</head>
+<body>
+<!----------------------------header-------------------->
+
+<header class="navbar navbar-expand-lg navbar-light fixed-top">
+	<a class="navbar-brand" href="#"><img src="images/logomain.png"></a>
+  
+	<form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn my-2 my-sm-0" id="photos" type="submit">Search</button>
+    </form>
+	 
+	 <button onclick="document.getElementById('id01').style.display='block'" class="btn" style="width:auto;">Login</button>
+	
+	<a class="nav-l" href="products.html#cart"><img src="images/cart.png" width="35" height="35"></a>
+<!--
+<script>
+	$(document).ready(function(){
+			var url = "http://api.flickr.com/services/feeds/photos_public.gne?" +
+	    			  "format=json&jsoncallback=?&tags(onClick)=Goldentemple,Amritsar";
+	
+			$.getJSON(url, function(data){
+				var html = "";
+				$.each(data.items, function(i, item){
+					html += "<h2>" + item.title + "</h2>";	
+					html += "<img src=" + item.media.m + ">";
+					html += "<p><b>Title: </b>" +item.title +"</p>";
+					html += "<p><b>Tags: </b>" +item.tags +"</p>";
+					html += "<p><b>Date Taken: </b>" +item.date_taken +"</p>";
+				});
+				$("#photos").html(html);
+			});          
+        });
+    </script>
+-->
+</header>
+<!-------------------------------------Login MOdal---------------------->
+
+<div id="id01" class="modal1">
+  
+  <form class="modal-content animate" id="LogCol" action="/action_page.php" method="post">
+    <div class="imgcontainerLog">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
+      <img src="Images/profile.png" alt="Profile" class="profileLog">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" id="buttonLog" ><a href="index.html">Login</a></button><br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+	
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelLog">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+<!----------------------------------navigation menu------------------------>
+<nav class="navbar navbar-expand-lg  fixed-top">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" id="active" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About Us</a>
+      </li>
+      
+	  <li class="nav-item">
+        <a class="nav-link" href="products.html">Products</a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a class="nav-link" href="offerZone.html">Register</a>
+      </li>
+	  
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="explore.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="tutorial.html">Tutorials</a>
+          <a class="dropdown-item" href="tutorial.html#buy">Buy N Sell</a>
+         
+        </div>
+      </li>
+	   
+	  <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </li>
+	  
+	 
+    </ul>
+	</div>
+</nav>
+
+
+
+<!----------------------------main-------------------->
+
+
+<!-------------------------------------SLider--------------->
+<main>
+<div class="bannersection">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Images/lab2.jpg" class="d-block w-100" >
+    </div>
+    
+	<div class="carousel-item">
+      <img src="Images/lab1.jpg" class="d-block w-100" >
+    </div>
+	<div class="carousel-item">
+      <img src="Images/lab4.jpg" class="d-block w-100" >
+    </div>
+	<div class="carousel-item">
+      <img src="Images/lab5.jpg" class="d-block w-100" >
+    </div>
+	
+	<div class="carousel-item">
+      <img src="Images/lab8.jpg" class="d-block w-100" >
+    </div>
+	<div class="carousel-item">
+      <img src="Images/lab9.jpg" class="d-block w-100" >
+    </div>
+	<div class="carousel-item">
+      <img src="Images/lab10.jpg" class="d-block w-100" >
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+
+<!----------------------Jumbotron---------------------------->
+<div class="unique1">
+<div class="jumbotron">
+  <h1 class="displayJumb">World's best weapons seller</h1>
+  
+  <hr class="my">
+  <p class="text">We have powerful and latest launched weapons for you, specially at some big deals on daily basis.</p>
+  <a class="btn1 btn1-primary btn-lg" href="about.html" role="button">Learn more</a>
+</div>
+</div>
+
+<!-------------------------------------cards-------------------------->
+<div class="unique1">
+ <h1>Top Products</h1>
+ 
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src ="Images/g10.jpg"><br>
+	  <p><b> Canuck Enforcer 12ga. Pump-Action 3</b></p>
+	  <p> $ 70.50 </p>
+ <a class="btn2 btn2-primary btn2-lg" href="products.html" role="button">More</a>
+
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src ="Images/g1.jpg"><br>
+	  <p> <b>DPMS / Husan .410 Complete Shotgun</b></p>
+	  <p> $ 65.50</p>
+ <a class="btn2 btn2-primary btn2-lg" href="products.html" role="button">More</a>
+
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src ="Images/g6.jpg"><br>
+	  <p><b> STI 1911 Trojan 45acp Blue Finish (used)</b></p>
+	  <p> $ 80.50</p>
+	  
+ <a class="btn2 btn2-primary btn2-lg" href="products.html" role="button">More</a>
+
+    </div>
+  </div>
+  </div>
+	
+</div>
+
+
+<!---------------------extra--------------------------------------->
+<div class="unique1">
+<div class="card text-center">
+  <div class="card-header">
+    Upcoming
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">New launching product</h5>
+    <p class="card-text">Our new product will launch in:</p>
+	 <p id="demo"></p>
+	 <p> For pre-booking at 10% discount, register with Us and book your product</p><br>
+    <a href="offerZone.html" class="btn3 btn3-primary"><b>Book now</b></a>
+  </div>
+  <div class="card-footer text-muted">
+    Aperture
+  </div>
+</div>
+</div>
+
+
+</main>
+<!-----------------------------footer-------------------------->
+<footer class="footer">
+			<div class="mainfoot">
+				<div class="first footercol">
+					<h3>About</h3>
+					<p>Aperture Labs </p>
+					<p>Toronto</p>
+					<p>aperturelab@gmail.com</p>
+					
+				</div>
+				<div class="first footercol">
+					<h3>Quick Links</h3>
+					<ul class="footlink">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us </a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="offerZone.html">Register</a></li>
+                  <li><a href="tutorial.html">Services</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+               </ul>
+				</div>
+				<div class="first footercol">
+					<h3>Follow Us</h3>
+					<div class="social">
+						<a href="https://www.facebook.com/Portal-2-Aperture-1459245614397656/">
+						<img src="images/fb.png" alt="Facebook">
+						</a>
+						<a href="https://www.instagram.com/aperturescienceportal/">
+						<img src="images/insta.png" alt="Instagram">
+						</a>
+						<a href="https://half-life.fandom.com/wiki/Aperture_Science">
+						<img src="images/go.png" alt="Google+">
+						</a>
+						<a href="https://www.youtube.com/watch?v=xR4TWp1VkHM">
+						<img src="images/yt.png" alt="YouTube">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="copyfoot">
+				<p>© Copyright 2019 | Aperture Labs | All Rights Reserved | Design & Developed by Team Apertures</p>
+			</div>
+	</footer>
+
+
+<!----------------------------------Cookies------------------------->	
+	<div id="popup-container">
+        <a class="close">X</a>
+          <div id="popup-window">
+            <div class="modal-content">
+              <a href="#" class="your-class"></a>
+           
+            <p>This website uses cookies to personalize content and analyse traffic in order to offer you a better experience.</p>
+			<a class="close" id="close">Accept</a>
+          </div>
+        </div>
+      </div>
+	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="JS/jquery.cookie.js"></script>
+    <script src="JS/custom.js"></script>
+</body>
+</html>

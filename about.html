@@ -1,0 +1,406 @@
+<html>
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Welcome - Aperture Labs</title>
+      <meta name="description" content="Digital creative contents including photography">
+      <meta name="keywords" content="photography, video production, coaching ">
+      <meta name="author" content="Group 2">
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      
+     
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	  
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="JS/about.js"></script> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
+
+	  <link rel="stylesheet" href="CSS/about.css">
+		  
+			 
+</head>
+<body>
+
+<header class="navbar navbar-expand-lg navbar-light fixed-top">
+	<a class="navbar-brand" href="#"><img src="images/logomain.png"></a>
+  
+	<form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn my-2 my-sm-0" type="submit">Search</button>
+    </form>
+	 
+	 <button onclick="document.getElementById('id01').style.display='block'" class="btn" style="width:auto;">Login</button>
+	 
+	 <a class="nav-l" href="products.html#cart"><img  src="images/cart.png" width="35" height="35"></a>
+	 
+
+
+	
+
+</header>
+
+
+<!-------------------------------------Login MOdal---------------------->
+
+<div id="id01" class="modal1">
+  
+  <form class="modal-content animate" id="LogCol" action="/action_page.php" method="post">
+    <div class="imgcontainerLog">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
+      <img src="Images/profile.png" alt="Profile" class="profileLog">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" id="buttonLog" ><a href="index.html">Login</a></button><br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+	
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelLog">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+<nav class="navbar navbar-expand-lg fixed-top">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link"  href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="active" href="about.html">About Us</a>
+      </li>
+      
+	  <li class="nav-item">
+        <a class="nav-link" href="products.html">Products</a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a class="nav-link" href="offerZone.html">Register</a>
+      </li>
+	  
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="explore.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="tutorial.html">Tutorials</a>
+          <a class="dropdown-item" href="tutorial.html#buy">Buy N Sell</a>
+         
+        </div>
+      </li>
+	   
+	  <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </li>
+	  
+	 
+    </ul>
+	</div>
+</nav>
+
+	<main>
+<div class="bannersection">
+				<div class="welcome-text">
+					<h1>Who we are</h1>
+					<p id="pp"> World's best weapons Sellers </p><br>
+					<p id="pp2" > Think Innovative </p>
+					
+				</div>
+			</div>
+			
+			
+<div class="unique4">
+<button class="button"><span>About us </span></button>
+<div class="row">
+ 
+   <div class="column">
+   <div class="card">
+      <h1>Creators</h1>
+	     <p>we believe in throwing science at the 
+	  wall and seeing what sticks. Below you can 
+	  see the design for one of our experimental 
+	  testing chambers, built especially to assess
+	  research subjects' agility and skill with our
+	  patented portal gun.</p>
+	  </div>
+	  </div>
+	  
+	 <div class="column">
+	 <div class="card">
+      <h1>Our Values</h1>
+	     <p>Handheld Portals,Weighted 
+	  companion cubes, crushers are some out of our innovations. 
+	  Aperture Laboratories is also used as a trade name by 
+	  Aperture Science for mostof its products, as Aperture
+	  Science dba Aperture Laboratories.</p>
+	  </div>
+	  </div>
+</div>
+
+<div class="row">
+ 
+   <div class="column">
+   <div class="card">
+      <h1>Our Mission</h1>
+	    <p> We also produce highly 
+	 expensive gel with properties unknown in 
+	 currently discovered elements and sentry turrets 
+	 (available for purchase) to facilitate discoveries.
+	 No expense can be spared for the cause of science.</p>
+	  </div>
+	  </div>
+	  
+	 <div class="column">
+	 <div class="card">
+      <h1>Our Vision</h1>
+	     We are looking further to have some other experiments.
+	     
+		   Attempting to reduce the water content of test subjects
+		   from sixty percent to around twenty or thirty percent through
+		   the use of jet engines.Using nanoparticles in the Mobility Gels to introduce 
+		   "experimental genes and RNA molecules".
+		   </p>
+	  </div>
+	  </div>
+</div>
+</div>
+
+
+<!--<div class="unique1">
+<div class = "write">
+   <div id="flip">About Us </div>
+   <div id="panel"> Aperture Laborteries is a weapon manufacturing & selling <br> 
+      company founded in 1970.Our branches are in USA, Mexico <br>
+	  and headquarter in Toronto.Handheld Portals,Weighted <br>
+	  companion cubes, crushers are some out of our innovations. <br>
+	  Aperture Laboratories is also used as a trade name by  <br>
+	  Aperture Science for mostof its products, as Aperture<br>
+	  Science dba Aperture Laboratories.Aperture literally means<br>
+	  "narrow gap or hole"; it is the term used for the iris-like <br>
+	  opening used in cameras and certain doors, such as the <br>
+	  bottom-mounted door on the Aperture Science Pneumatic  <br>
+	  Diversity Vent . The company's logo reflects this, as <br>
+	  it takes the shape of an iris-like aperture.
+       
+        
+   </div>
+   </div>
+   
+   </div>-->
+
+<!--<div class="unique2">
+<div class="row">
+  <div class="column">
+    <div class="card1">
+      <h3>Our Mission</h3>
+	  <br>
+      <p>we believe in throwing science at the <br>
+	  wall and seeing what sticks. Below you can <br>
+	  see the design for one of our experimental <br>
+	  testing chambers, built especially to assess <br>
+	  research subjects' agility and skill with our <br>
+	  patented portal gun. We also produce highly <br>
+	 expensive gel with properties unknown in <br>
+	 currently discovered elements and sentry turrets <br>
+	 (available for purchase) to facilitate discoveries.<br>
+	 No expense can be spared for the cause of science.</p>
+      
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card2">
+      <h3>Our Vision</h3>
+	  <br>
+      <p>We are looking further to have some other experiments.
+	     <ul>
+		   <li> Attempting to reduce the water content of test subjects
+		   from sixty percent to around twenty or thirty percent through
+		   the use of jet engines.</li>
+           <li>Using nanoparticles in the Mobility Gels to introduce 
+		   "experimental genes and RNA molecules" into Test Subject's 
+		   tumours caused by the facility itself.</li>
+		   </ul></p>
+      
+    </div>
+  </div>
+  </div>-->
+  
+  <div class="unique4">
+  <div class="faq">
+    
+  <div class="row">
+  
+			<div class="imgg col-md-6">
+			<div class="set">
+<img id="imggg" src = "images/FAQ2.png"><br><br>
+<h2><b>Frequently Asked Questions!</b></h2>
+</div>
+</div>
+  <div class="FAQ col-md-6">
+     <h1 class="text-center"> FAQ</h1>
+  <button class="accordion">What is Aperture Laborteries?</button>
+<div class="panel">
+  <p>Aperture Science is a scientific research company founded by Cave Johnson. Portal and Portal 2 take place in Aperture Science's Enrichment Center, which is dedicated to endlessly testing the Aperture Science products and the humans that use them.</p>
+</div>
+
+<button class="accordion">Where is Aperture labs located?</button>
+<div class="panel">
+  <p>Aperture Laborteries is a weapon manufacturing & selling 
+      company founded in 1970.Our branches are in USA, Mexico 
+	  and headquarter in Toronto.</p>
+</div>
+
+<button class="accordion">What does GLaDOS stand for?</button>
+<div class="panel">
+  <p>Genetic Lifeform and Disk Operating System
+GLaDOS (Genetic Lifeform and Disk Operating System) is an artificially intelligent computer system from the video game series Portal.</p>
+</div>
+<button class="accordion">When did Cave Johnson die?</button>
+<div class="panel">
+  <p>The 1950s portrait of Cave Johnson bears strong resemblance to a photo of Walt Disney.
+  Valve Lead Animator Bill Fletcher was the inspiration for the appearance of Cave Johnson. Cave Johnson started the GLaDOS project as a way to cheat death before he died from his moon rock poisoning.</p>
+</div>
+<button class="accordion">What year does Portal 2 take place?</button>
+<div class="panel">
+  <p>Portal 2 was also planned to be set in Aperture Science's earlier days, specifically during the 1950's era.Mar 11, 2019</p>
+</div>
+<button class="accordion">Will there be a Portal 3?</button>
+<div class="panel">
+  <p>Portal 3 is a dream that continues to break our hearts with every tiny spinoff and LEGO DLC pack. ... With 
+  Valve running the show behind Steam, the online game store most popular amongst PC gamers, there is literally no need for them to make a third title of Half-Life 2, Left for Dead 2, or Portal 2.</p>
+</div>
+<button class="accordion">What is a chemical weapon?</button>
+<div class="panel">
+  <p>A chemical weapon (CW) is a specialized munition that uses chemicals formulated to inflict death or harm on humans. ... Nerve gas, tear gas and pepper spray are three modern examples of chemical weapons.</p>
+</div>
+<button class="accordion">How many guns can you put on a 4473?</button>
+<div class="panel">
+  <p>The second firearm may be recorded on the same Form 4473. The acquisition of the 2 firearms is considered a single transaction.</p>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+<script>
+			var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+			</script>
+			
+	<div class="unique4">
+<div id="calendar">	
+<h1 id="check"> Events Calender</h1>
+</div>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23fff
+fff&amp;ctz=America%2FToronto&amp;src=bW9nYW1vbmlrYTIwMDJAZ21haWwuY29t&amp;src=YWRkcmVzc2Jvb2sjY2
+9udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23DD5511&amp;color=%23329262&amp;showTitle=1&amp;
+title=Event%20Calendar" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+  </div>
+  
+
+  
+</main>
+
+
+
+
+
+<footer class="footer">
+			<div class="mainfoot">
+				<div class="first footercol">
+					<h3>About</h3>
+					<p>Lucid Aperture Labs </p>
+					<p>Toronto</p>
+					<p>lucidaperturelab@gmail.com</p>
+					
+				</div>
+				<div class="first footercol">
+					<h3>Quick Links</h3>
+					<ul class="footlink">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us </a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="offerZone.html">Register</a></li>
+                  <li><a href="tutorial.html">Services</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+               </ul>
+				</div>
+				<div class="first footercol">
+					<h3>Follow Us</h3>
+					<div class="social">
+						<a href="https://www.facebook.com/lucidaperturelab/">
+						<img src="images/fb.png" alt="Facebook">
+						</a>
+						<a href="https://www.instagram.com/lucidaperturelab/">
+						<img src="images/insta.png" alt="Instagram">
+						</a>
+						<a href="https://lucidaperturelab.com">
+						<img src="images/go.png" alt="Google+">
+						</a>
+						<a href="https://www.youtube.com/watch?v=xR4TWp1VkHM">
+						<img src="images/yt.png" alt="YouTube">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="copyfoot">
+				<p>© Copyright 2019 | Aperture Labs | All Rights Reserved | Design & Developed by Team Apertures</p>
+			</div>
+	</footer>
+</body>
+</html>
+
